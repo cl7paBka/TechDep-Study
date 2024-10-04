@@ -2,7 +2,7 @@
 # /schemas/input/user.py, а также /schemas/output/user.py
 # Столкнулся с RuntimeError: threads can only be started once возникает из-за того, что поток, который должен
 # обрабатывать подключение к базе данных через aiosqlite, был повторно запущен или попытка его запуска происходит
-# неправильно.
+# неправильно. Починил.
 from FastAPI_Study.db.connection import get_db
 from FastAPI_Study.schemas.user import UserInfo, UserInDB
 
